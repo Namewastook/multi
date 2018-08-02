@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Multiplication Table</title>
+      <style>
+         .cell {display: inline-block; width: 30px; height: 30px; text-align: center; border: 1px solid black;}
+         .header {background: green;}
+      </style>
+   </head>
+   <body>
+      <h1>Multiplication Table</h1>
+      <script>
+          num=20
+         // output the header row
+         document.write('<span class="cell header">X</span>');
+         for(i = 0; i <= num; i++) {
+            document.write('<span class="cell header">' + i + '</span>');
+         }
+         document.write('<br>');
+
+         // TODO: Write two nested for loops to output the rest of the multiplication table
+         for(y=0; y<=num; y++){
+            document.write('<span class="cell header">' + y + '</span>');
+                for(x=0; x<=num; x++){
+                    document.write('<span class="cell">' + y * x + '</span>');
+                }
+                document.write('<br>');
+         }
+
+      </script>
+   </body>
+</html> 

@@ -1,0 +1,15 @@
+         for(i = 0; i <= 10; i++) {
+            if(i === 0) {
+                document.write('<span class="cell header">X</span>');
+                document.write('<br>');
+                document.write('<span class="cell header">' + i + '</span>');
+            }
+            document.write('<span class="cell header">' + i + '</span>');
+
+            for( y=0; y<=10; y++) {
+                document.write('<span class="cell">' + y * i + '</span>');
+                
+            }
+            document.write('<br>');       
+            
+         } 
